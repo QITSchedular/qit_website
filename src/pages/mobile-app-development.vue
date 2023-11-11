@@ -1,89 +1,108 @@
 <template>
   <div>
-    <div class="background column">
-      <ul class="circles q-pa-none q-ma-none">
-        <li>
-          <q-icon
-            name="ion-logo-android"
-            size="xl"
-            class="absolute-center"
-            color="green-13"
-            style="opacity: 0.7"
-          />
-        </li>
-        <li>
-          <q-icon
-            name="fas fa-mobile-alt"
-            size="xl"
-            class="absolute-center"
-            color="light-green-11"
-            style="opacity: 0.7"
-          />
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li>
-          <q-icon
-            name="fab fa-apple"
-            size="xl"
-            class="absolute-center"
-            color="dark"
-            style="opacity: 0.7"
-          />
-        </li>
-        <li>
-          <q-icon
-            name="fab fa-app-store"
-            size="xl"
-            class="absolute-center"
-            color="white"
-            style="opacity: 0.7"
-          />
-        </li>
-        <li></li>
-        <li></li>
-        <li>
-          <q-icon
-            name="phonelink_setup "
-            size="xl"
-            class="absolute-center"
-            color="yellow-12"
-            style="opacity: 0.7"
-          />
-        </li>
-      </ul>
-      <div
-        class="text-bold text-center text-h4 text-white q-mt-xl q-pt-xl animated fadeIn"
-      >
-        Mobile App Development
-      </div>
+    <div style="font-family: 'Spartan'">
+      <link
+        href="https://fonts.googleapis.com/css?family=Spartan"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap"
+        rel="stylesheet"
+      />
 
-      <q-breadcrumbs
-        class="q-pt-md text-blue-grey-11 animated fadeIn"
-        active-color="white"
+      <q-parallax
+        class="gt-sm"
+        src="../assets/bg102.png"
+        style="height: 500px; margin-top: 20px"
       >
-        <q-breadcrumbs-el label="Home" to="/" />
-        <q-breadcrumbs-el label="Mobile App Development" />
-      </q-breadcrumbs>
+        <div>
+          <div class="row items-center justify-around">
+            <div class="col-12 col-md">
+              <p
+                class=""
+                style="
+                  font-family: 'Spartan';
+                  font-size: 32px;
+                  text-align: left;
+                  color: #f2f4f8;
+                  margin-bottom: 0px;
+                "
+              >
+                IT Solution - Mobile Development
+              </p>
+            </div>
+            <div class="col-12 col-md q-pa-xl q-ml-xl" data-aos="fade-right">
+              <div class="col-12 col-md q-pa-xl" data-aos="zoom-in-up">
+                <q-img
+                  src="~/assets/cloudOneAnimated.svg"
+                  style="
+                    max-width: 450px;
+                    margin-top: 20px;
+                    margin-bottom: 0px;
+                    margin-left: 70px;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </q-parallax>
+
+      <q-parallax class="lt-md" src="../assets/bg102.png" style="height: 800px">
+        <div>
+          <div class="row items-center justify-center">
+            <div class="col-12 col-md q-px-xl q-pt-xl q-mx-xl">
+              <p
+                class="text-h5 text-weight-bold"
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                  color: #f2f4f8;
+                "
+              >
+                IT Solution - Mobile Development
+              </p>
+            </div>
+          </div>
+        </div>
+      </q-parallax>
     </div>
 
     <div class="gt-sm">
-      <div class="row items-center justify-center">
+      <div
+        class="row items-center justify-center"
+        style="margin-top: 30px; margin-bottom: 30px"
+      >
         <div class="col-12 col-md q-pa-xl q-ml-xl" data-aos="fade-right">
-          <p class="text-h6 text-blue-grey-7">IT Solution</p>
-          <p class="text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mobile App Development</p>
-          <p class="text-subtitle1 text-blue-grey-9">
+          <p
+            class="text-h4"
+            style="font-family: 'League Spartan', sans-serif; color: #3663a8"
+          >
+            It’s time to give life to your Ideas - Mobile Development.
+          </p>
+          <p
+            class="text-subtitle1 text-blue-grey-9"
+            style="font-family: 'League Spartan', sans-serif"
+          >
             We do create or develop the best and easily accessible mobile
             applications based on the end user’s requirements. Our experts
             develop both native and hybrid applications to reach the client’s
             requirements. The application we develop will stand out and make a
-            name for itself in the market. Our team will design the applications
-            in such a way as to prove the best experience to the user.
+            name for itself in the market. Our team of experienced developers
+            and designers will work with you to create an exceptional user
+            experience, using the latest technologies and best practices to
+            develop apps that are secure and scalable.
           </p>
         </div>
         <div class="col-12 col-md q-pa-xl q-mr-xl" data-aos="zoom-in-up">
-          <q-img src="~assets/mobile.png" style="max-width: 500px" />
+          <q-img
+            src="~assets/MobileDevelopmentIllustrator.png"
+            style="max-width: 500px"
+          />
         </div>
       </div>
     </div>
@@ -91,198 +110,338 @@
     <div class="lt-md">
       <div class="row items-center justify-center">
         <div class="col-12 col-md q-pa-lg q-mx-xl text-center">
-          <q-img src="~assets/mobile.png" style="max-width: 400px" />
+          <q-img
+            src="~assets/MobileDevelopmentIllustrator.png"
+            style="max-width: 400px"
+          />
         </div>
         <div class="col-12 col-md q-pa-xl q-mx-xl">
-          <p class="text-h6 text-blue-grey-7" style="font-family:  system-ui;">IT Solution</p>
-          <p class="text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mobile App Development</p>
-          <p class="text-subtitle1 text-blue-grey-9" style="font-family:  system-ui;">
+          <p class="text-h6 text-blue-grey-7">IT Solution</p>
+          <p
+            class="text-h4 text-primary"
+            style="font-family: 'League Spartan', sans-serif; color: #3663a8"
+          >
+            It’s time to give life to your Ideas - Mobile Development.
+          </p>
+          <p
+            class="text-subtitle1 text-blue-grey-9"
+            style="font-family: 'League Spartan', sans-serif"
+          >
             We do create or develop the best and easily accessible mobile
             applications based on the end user’s requirements. Our experts
             develop both native and hybrid applications to reach the client’s
             requirements. The application we develop will stand out and make a
-            name for itself in the market. Our team will design the applications
-            in such a way as to prove the best experience to the user.
+            name for itself in the market. Our team of experienced developers
+            and designers will work with you to create an exceptional user
+            experience, using the latest technologies and best practices to
+            develop apps that are secure and scalable.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="bg-grey-2 q-pt-xl q-pb-sm">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <p class="text-center text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Why Chose Us ?</p>
-        <p
-          class="text-blue-grey-9 text-subtitle1 q-mx-xl"
-          v-bind:class="{ 'q-px-xl': mobile, 'text-center': mobile }" style="font-family:  system-ui;"
+    <!-----------------------Cards Section--------------------------------->
+
+    <div class="" style="background-color: #101729">
+      <div
+        class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly"
+        style="font-family: 'League Spartan', sans-serif"
+      >
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 100px"
         >
-          From developing a Mobile app for distinct industries to providing a
-          seamless user experience, there are a plethora of reasons that you can
-          find to hire us as your development partner. With a primary focus on
-          process-driven development, we offer exclusive benefits to all our
-          discerning clients.
+        <q-img src="~assets/mobile-dev/num01.svg" style="max-width: 30px; max-height: 30px;" />
+        
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+         ">
+         Hybrid Development</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300; 
+          ">
+            Cross-platform apps that function in various environments, blending
+            native and web technologies uniquely.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 100px"
+        >
+        <q-img src="~assets/mobile-dev/num02.svg" style="max-width: 35px; max-height: 35px;" />
+
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          ">Native</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300; 
+          ">
+            Our developers can build high-quality native apps for Android &
+            IOS, aligning with business & security needs.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 100px"
+        >
+        <q-img src="~assets/mobile-dev/num03.svg" style="max-width: 35px; max-height: 35px;" />
+
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+
+          ">Progressive Web App</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300; 
+          ">
+            The future of web and mobile experiences. It combines speed, offline
+            access, and cross-device compatibility.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------Technologies--------------------------------->
+    <div>
+      <div
+        class="col-md-12 col-lg-12 bg-white col-xs-12 col-sm-12"
+        style="margin-bottom: 30px"
+      >
+        <p
+          class="text-center text-h4 q-pt-xl bg-white"
+          style="
+            font-family: 'League Spartan', sans-serif;
+            color: #3663a8;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 43.6px;
+          "
+        >
+          Frameworks we use
+          <br />
+          <span
+            class="text-center text-subtitle1 bg-white q-px-sm"
+            style="
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+              color: #21272a;
+            "
+          >
+            Empowering innovation with cutting-edge technology
+          </span>
         </p>
       </div>
 
-      <div class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly">
+      <div
+        class="q-mx-lg q-pt-md q-pb-xl row items-stretch bg-white q-gutter-md justify-evenly gt-sm"
+        style="margin-bottom: 80px"
+      >
         <q-card
-          class="my-cardc q-my-md text-blue-grey-9 q-pa-md"
+          class="my-card q-ma-md row justify-center items-center"
           data-aos="fade-right"
         >
-          <q-card-section class="text-center">
-            <q-icon
-              name="far fa-clock"
-              size="45px"
-              class="q-pa-sm"
-              color="secondary"
+          <q-card-section>
+            <q-img
+              src="~assets/mobile-dev/logo1.svg"
+              basic
+              style="width: 90px"
             />
-          </q-card-section>
-          <q-card-section class="text-center text-h6 text-primary" style="font-family:  system-ui;">
-            Hourly Rates
-          </q-card-section>
-          <q-card-section class="text-justify">
-            If you think your work scope is fixed and well laid out, then we can
-            work for a fixed price and timeline.
           </q-card-section>
         </q-card>
 
         <q-card
-          class="my-cardc q-my-md text-blue-grey-9 q-pa-md active"
-          data-aos="zoom-in"
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-right"
         >
-          <q-card-section class="text-center">
-            <q-icon
-              name="fas fa-user-friends"
-              size="45px"
-              class="q-pa-sm"
-              color="secondary"
+          <q-card-section>
+            <q-img
+              src="~assets/mobile-dev/logo2.svg"
+              basic
+              style="width: 90px"
             />
-          </q-card-section>
-          <q-card-section class="text-center text-h6 text-primary">
-            Efficient Team
-          </q-card-section>
-          <q-card-section class="text-justify">
-            We are proud to announce that we have created a pool of the best
-            Mobile app developers.
           </q-card-section>
         </q-card>
 
         <q-card
-          class="my-cardc q-my-md text-blue-grey-9 q-pa-md"
+          class="my-card q-ma-md row justify-center items-center"
           data-aos="fade-left"
         >
-          <q-card-section class="text-center">
-            <q-icon
-              name="fas fa-paper-plane"
-              size="45px"
-              class="q-pa-sm"
-              color="secondary"
+          <q-card-section>
+            <q-img
+              src="~assets/mobile-dev/logo3.svg"
+              basic
+              style="width: 90px"
             />
           </q-card-section>
-          <q-card-section class="text-center text-h6 text-primary">
-            Open Communication
-          </q-card-section>
-          <q-card-section class="text-justify">
-            We really want our clients to drop us their requirements in writing
-            through email.
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-left"
+        >
+          <q-card-section>
+            <q-img
+              src="~assets/mobile-dev/logo4.svg"
+              basic
+              style="width: 90px"
+            />
           </q-card-section>
         </q-card>
       </div>
-    </div>
 
-    <div class="q-pt-xl">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <p class="text-center text-bold text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-          We Develop Mobile App On Various Platform(s)
-        </p>
-        <p
-          class="text-blue-grey-9 text-subtitle1 q-mx-xl"
-          v-bind:class="{ 'q-px-xl': mobile, 'text-center': mobile }"
+      <div class="lt-md">
+        <q-carousel
+          animated
+          v-model="slide"
+          navigation
+          infinite
+          :autoplay="autoplay"
+          arrows
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          @mouseenter="autoplay = false"
+          @mouseleave="autoplay = true"
+          class="bg-transparent row justify-center items-center"
+          style="height: 250px"
         >
-          Our developers have over decade-long expertise in building mobile
-          solutions that meet consumer needs, empower the generation’s brand
-          respect, and lead business growth and expansion.
-        </p>
-      </div>
+          <q-carousel-slide :name="1">
+            <div
+              class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card
+                class="my-card card row justify-center items-center shadow-7 q-mx-lg"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/mobile-dev/logo1.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+              <q-card
+                class="my-card card row justify-center items-center shadow-7"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/mobile-dev/logo2.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
 
-      <div class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly" style="font-family:  system-ui;">
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon
-            name="fab fa-uncharted"
-            size="45px"
-            class="q-pa-sm"
-            color="secondary"
-          />
-          <p class="text-h6 text-primary">Native Mobile App Development</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            Our mobile app developers can build high-quality native apps for
-            both Android and iOS systems aligned with your business and security
-            requirements.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon
-            name="fab fa-mixer"
-            size="45px"
-            class="q-pa-sm"
-            color="secondary"
-          />
-          <p class="text-h6 text-primary">Hybrid Mobile App Development</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            Cross-platform apps that can work in different environments thanks
-            to a unique blend of native and web app technologies.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon
-            name="phonelink"
-            size="45px"
-            class="q-pa-sm"
-            color="secondary"
-          />
-          <p class="text-h6 text-primary">Progressive Web App Development</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            With Progressive Web Apps, we deliver native-like capabilities and
-            installability while reaching anyone, anywhere, on any device with a
-            single codebase.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon name="watch" size="45px" class="q-pa-sm" color="secondary" />
-          <p class="text-h6 text-primary">Wearables and Embedded Software</p>
-          <p class="text-blue-grey-9 text-subtitle1" style="font-family:  system-ui;">
-            We can create companion apps for a number of wearable devices, and
-            integrate them with smart devices or proprietary peripherals.
-          </p>
-        </div>
+          <q-carousel-slide :name="2">
+            <div
+              class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card
+                class="my-card card row justify-center items-center shadow-7 q-mx-lg"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/mobile-dev/logo3.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+              <q-card
+                class="my-card card row justify-center items-center shadow-7"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/mobile-dev/logo4.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
       </div>
     </div>
 
-    <div class="bg-grey-2">
-      <p class="text-dark text-center q-pa-xl text-h5 q-ma-none gt-xs" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-        <span class="q-px-xl">For More information, Book Your Free Demo</span>
-        <q-btn
-          color="primary"
-          icon="call"
-          class="q-ma-md"
-          outline
-          rounded
-          label="Contact Us"
-          to="/contact-us"
-        />
-      </p>
+    <!------------------------Would you love to work with you--------------------------------->
+    <div class="infox gt-xs">
+      <div
+        class="full-width flex flex-center"
+        style="background-color: #101729"
+      >
+        <p
+          class="text-center q-pa-xl"
+          style="font-family: 'League Spartan', sans-serif"
+        >
+          <span
+            class="q-px-xl"
+            style="
+              color: #dde1e6;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 57.6px;
+            "
+            >We would love to work with you on your Ideas
+          </span>
+          <q-btn
+            color=""
+            style="color: #dde1e6"
+            outline
+            label="Contact Us"
+            to="/contact-us"
+          />
+        </p>
+      </div>
+    </div>
 
-      <p class="text-dark text-center q-pa-xl text-h5 lt-sm q-ma-none" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-        For More information, Book Your Free Demo
-        <br /><br />
-        <q-btn
-          color="primary"
-          icon="call"
-          outline
-          rounded
-          label="Contact Us"
-          to="/contact-us"
-        />
-      </p>
+    <!-------------------Would you love to work with you Mobile Version ----------------------->
+
+    <div class="infox lt-sm">
+      <div
+        class="full-width flex flex-center"
+        style="
+          background-color: #101729;
+          font-family: 'League Spartan', sans-serif;
+        "
+      >
+        <p
+          class="text-dark text-center q-pa-xl text-h5"
+          style="color: #dde1e6; font-family: 'League Spartan', sans-serif"
+        >
+          We would love to work with you on your Ideas
+          <br />
+          <q-btn
+            color=""
+            style="color: #dde1e6"
+            outline
+            label="Contact Us"
+            to="/contact-us"
+          />
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -296,13 +455,14 @@ export default {
       mobile: false,
       metaTags: {
         description:
-          "We do create or develop the best and easily accessible mobile applications based on the end user’s requirement. Our experts develop both native and hybrid applications to reach the client’s requirement",
-        title: "Quantum | Mobile APP Development",
+          "Looking for Website Design with creative ideas and Suggestion? You are in the right Place. Where our Field Experienced Researcher Come up with Unique and Creative Web template, names and ideas.",
+        title: "Quantum | Web Development",
         keywords:
-          "Mobile app development,hybride app, react mobile app, ios app,android app,mobile app",
+          "Website Dvelopment, Angular Development, web app development,react dvelopment,seo,digital marketing, wordpress development",
       },
     };
   },
+  meta,
   created() {
     if (this.$q.screen.lt.sm) {
       this.mobile = false;
@@ -315,27 +475,15 @@ export default {
 
 <style scoped>
 .my-cardc {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 15px;
-  border-top-color: #3663a8;
-  border-top-width: 5px;
-  border-top-style: solid;
-  border-bottom-color: #ff8b0f;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .my-cardc:hover {
   box-shadow: 0 10px 13px -6px rgba(54, 99, 168, 0.2),
     0 20px 31px 3px rgba(54, 99, 168, 0.14),
     0 8px 38px 7px rgba(54, 99, 168, 0.12) !important;
-  border-top-style: solid;
-  border-top-color: #ff8b0f;
-  border-top-width: 5px;
-  border-bottom-color: #3663a8;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
 }
 
 .borderless {
@@ -343,7 +491,7 @@ export default {
 }
 
 .background {
-  background: linear-gradient(132deg, #051937, #004d7a, #008793, #00bf72);
+  background: linear-gradient(132deg, #0652c5, #d4418e);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -474,9 +622,11 @@ export default {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }

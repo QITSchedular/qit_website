@@ -17,17 +17,16 @@
       <q-toolbar style="background-color: #FFF;">
             <!-- Logo -->
         <q-toolbar-title class="gt-sm q-mx-xl" @click="$router.push('/')">
-          <q-img src="../assets/qit.svg" style="max-width:150px; margin-top: 7px; margin-bottom: 20px;" />
+          <q-img src="~/assets/qit.svg" style="max-width:150px; margin-top: 7px; margin-bottom: 20px;" />
         </q-toolbar-title>
          <!-- Logo Mobile Version -->
         <q-toolbar-title class="lt-md" @click="$router.push('/')">
-          <q-img src="../assets/qit.svg" style="max-width:150px; margin-top: 7px; margin-bottom: 20px;" />
+          <q-img src="~/assets/qit.svg" style="max-width:150px; margin-top: 7px; margin-bottom: 20px;" />
         </q-toolbar-title>
          <q-no-ssr>
           <!-- NavBar -->
         <div class="gt-sm navbar" style="font-family:'League Spartan', sans-serif; background-color: #FFF;
         ">
-
 
           <router-link class="text-subtitle1" style="color:#121619;" to="/">Home</router-link>
           <div class="dropdown" style="color:#121619;">
@@ -45,110 +44,65 @@
                 </div>
                 <div class="dropright-content">
                   <router-link
-                    to="/sap-business-one"
+                    to="/sap-business-one-plus-hana"
                     class="text-subtitle2 text-dark"
-                  
-                    >SAP Business One</router-link
+                    >SAP B1 + Hana </router-link
                   >
                   <router-link
                     class="text-subtitle2 text-dark"
                     to="/sap-business-one-on-cloud"
-                  
-                    >SAP Business One On Cloud</router-link
+                    >SAP B1 Cloud</router-link
                   >
                   <router-link
                     to="/sap-business-one-on-hana"
                     class="text-subtitle2 text-dark"
-                 
-                    >SAP Business One On HANA</router-link
-                  >
-                  <router-link
-                    to="/sap-business-one-addon"
-                    class="text-subtitle2 text-dark"
-                
-                    >SAP Buisness One ADD-On(s)</router-link
-                  >
-                  <router-link
-                    to="/sap-s4-hana"
-                    class="text-subtitle2 text-dark"
-                  
-                    >SAP S/4 HANA</router-link
-                  >
-                  <router-link
-                    to="/sap-s4-hana-on-cloud"
-                    class="text-subtitle2 text-dark"
-                 
-                    >SAP S/4 HANA ON Cloud</router-link
+                    >SAP S/4 Hana + Cloud</router-link
                   >
                 </div>
               </div>
               <div class="dropright">
                 <div>
                   <button class="drbtn text-subtitle2">
-                    IT Solution
+                    IT Solutions
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </button>
                 </div>
                 <div class="dropright-content">
+                  <router-link
+                    to="/explore-it-solution"
+                    class="text-subtitle2 text-dark"
+                    >Explore Solutions</router-link
+                  >
                   <router-link
                     to="/web-development"
                     class="text-subtitle2 text-dark"
                     >Web Development</router-link
                   >
                   <router-link
-                    to="/customize-erp"
-                    class="text-subtitle2 text-dark"
-                    >Customize ERP</router-link
-                  >
-                  <router-link
                     to="/mobile-app-development"
                     class="text-subtitle2 text-dark"
-                    >Mobile APP Development</router-link
+                    >Mobile Application</router-link
                   >
+                  <router-link
+                    to="/ui-ux-design"
+                    class="text-subtitle2 text-dark"
+                    >UI/ UX Design </router-link
+                  >
+                  <router-link
+                    to="/erp-customization"
+                    class="text-subtitle2 text-dark"
+                    >Customise ERP
+                  </router-link>
                   <router-link
                     to="/crm-development"
                     class="text-subtitle2 text-dark"
-                    >CRM Development</router-link
-                  >
-                  <router-link
-                    to="/ecommerce-store-development"
-                    class="text-subtitle2 text-dark"
-                    >E-Commerce Store Development
+                    >CRM Development
                   </router-link>
                 </div>
               </div>
-              <div class="dropright"  >
-                <div>
-                  <button class="drbtn text-subtitle2"  >
-                    IT Counsulting & Traning
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <div class="dropright-content">
-                  <router-link
-                    to="/sap-traning"
-                    class="text-subtitle2 text-dark"
-                   
-                    >SAP Traning</router-link
-                  >
-                  <!-- <router-link
-                    to="/machine-learning-traning"
-                    class="text-subtitle2 text-dark"
-                    >Machine Learning Traning</router-link
-                  >
-                  <router-link
-                    to="/python-traning"
-                    class="text-subtitle2 text-dark"
-                    >Python Traning</router-link
-                  > -->
-                  <router-link
-                    to="/placement-service"
-                    class="text-subtitle2 text-dark"
-                    >Placement Service</router-link
-                  >
-                </div>
-              </div>
+             
             </div>
+
           </div>
           <div class="dropdown"  style="color:#121619;">
             <button class="dropbtn text-subtitle1"  style="color:#121619;">
@@ -241,55 +195,47 @@
             <q-list bordered>
               <q-expansion-item expand-separator label="SAP Solution">
                 <q-list bordered>
-                  <q-item clickable v-ripple to="sap-business-one">
-                    <q-item-section>SAP Business One</q-item-section>
+                  <q-item clickable v-ripple to="sap-business-one-plus-hana">
+                    <q-item-section>SAP B1 + Hana</q-item-section>
                   </q-item>
 
                   <q-item clickable v-ripple to="sap-business-one-on-cloud">
-                    <q-item-section>SAP Business One On Cloud</q-item-section>
+                    <q-item-section>SAP B1 Cloud</q-item-section>
                   </q-item>
 
                   <q-item clickable v-ripple to="/sap-business-one-on-hana">
-                    <q-item-section>SAP Business One On HANA</q-item-section>
+                    <q-item-section>SAP S/4 Hana + Cloud</q-item-section>
                   </q-item>
 
-                  <q-item clickable v-ripple to="sap-business-one-addon">
-                    <q-item-section>SAP Business One Add-On(s)</q-item-section>
-                  </q-item>
-
-                  <q-separator />
-
-                  <q-item clickable v-ripple to="/sap-s4-hana">
-                    <q-item-section>SAP S/4 HANA</q-item-section>
-                  </q-item>
-
-                  <q-item clickable v-ripple to="/sap-s4-hana-on-cloud">
-                    <q-item-section>SAP S/4 HANA On Cloud</q-item-section>
-                  </q-item>
                 </q-list>
               </q-expansion-item>
 
-              <q-expansion-item expand-separator label="IT Solution">
+              <q-expansion-item expand-separator label="IT Solutions">
                 <q-list bordered>
+                  <q-item clickable v-ripple to="/explore-it-solution">
+                    <q-item-section>Explore Solutions</q-item-section>
+                  </q-item>
+
                   <q-item clickable v-ripple to="/web-development">
                     <q-item-section>Web Development</q-item-section>
                   </q-item>
 
-                  <q-item clickable v-ripple to="/customize-erp">
-                    <q-item-section>Customize ERP</q-item-section>
-                  </q-item>
-
                   <q-item clickable v-ripple to="/mobile-app-development">
-                    <q-item-section>Mobile APP Development</q-item-section>
+                    <q-item-section>Mobile Application</q-item-section>
                   </q-item>
 
-                  <q-item clickable v-ripple to="/crm-development">
-                    <q-item-section>CRM Development</q-item-section>
+                  <q-item clickable v-ripple to="/ui-ux-design">
+                    <q-item-section>UI/ UX Design</q-item-section>
                   </q-item>
 
-                  <q-item clickable v-ripple to="/ecommerce-store-development">
+                  <q-item clickable v-ripple to="/erp-customization">
                     <q-item-section
-                      >E-Commerce Store Development</q-item-section
+                      >Customise ERP</q-item-section
+                    >
+                  </q-item>
+                  <q-item clickable v-ripple to="/crm-development">
+                    <q-item-section
+                      >CRM Development</q-item-section
                     >
                   </q-item>
                 </q-list>
@@ -297,19 +243,19 @@
 
               <q-expansion-item
                 expand-separator
-                label="IT Counsulting & Traning"
+                label="IT Counsulting & Trainingn"
               >
                 <q-list bordered>
                   <q-item clickable v-ripple to="/sap-traning">
-                    <q-item-section>SAP Traning</q-item-section>
+                    <q-item-section>SAP Training</q-item-section>
                   </q-item>
 
                   <q-item clickable v-ripple to="/machine-learning-traning">
-                    <q-item-section>Machine Learning Traning</q-item-section>
+                    <q-item-section>Machine Learning Training</q-item-section>
                   </q-item>
 
                   <q-item clickable v-ripple to="/python-traning">
-                    <q-item-section>Python Traning</q-item-section>
+                    <q-item-section>Python Training</q-item-section>
                   </q-item>
 
                   <q-item clickable v-ripple to="/placement-service">
@@ -317,6 +263,7 @@
                   </q-item>
                 </q-list>
               </q-expansion-item>
+              
             </q-list>
           </q-expansion-item>
 
@@ -396,7 +343,7 @@
             flat
             color="black"
             label="Business Solutions"
-            to="/sap-business-one"
+            to="/sap-business-one-plus-hana"
           />
           <br />
           <q-btn flat color="black" label="Career" to="/career-at-quantum" />
@@ -446,12 +393,12 @@
           </p>
           <p class="text-subtitle">
             <q-icon
-              name="call"
+              name="email"
               style="font-size: 1.5rem"
               color="black"
               class="q-mx-md"
             />
-            (+91) 94274 78799
+            hr@qitsolution.co.in
           </p>
           <p class="text-subtitle">
             <q-icon
@@ -639,12 +586,12 @@
           </p>
           <p class="text-subtitle">
             <q-icon
-              name="call"
+              name="email"
               style="font-size: 1.5rem"
               color="primary"
               class="q-mx-md"
             />
-            (+91) 94274 78799
+            hr@qitsolution.co.in
           </p>
           <p class="text-subtitle">
             <q-icon

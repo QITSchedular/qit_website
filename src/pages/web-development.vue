@@ -1,54 +1,108 @@
 <template>
   <div>
-    <div class="background column">
-      <ul class="circles q-pa-none q-ma-none">
-        <li>
-          <q-icon name="ion-logo-angular" size="xl" class="absolute-center" color="red" style="opacity: 0.7" />
-        </li>
-        <li>
-          <q-icon name="ion-logo-css3" size="xl" class="absolute-center" color="dark" style="opacity: 0.7" />
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li>
-          <q-icon name="ion-logo-wordpress" size="xl" class="absolute-center" color="dark" style="opacity: 0.7" />
-        </li>
-        <li>
-          <q-icon name="ion-logo-python" size="xl" class="absolute-center" color="yellow" style="opacity: 0.7" />
-        </li>
-        <li></li>
-        <li></li>
-        <li>
-          <q-icon name="ion-logo-nodejs" size="xl" class="absolute-center" color="yellow" style="opacity: 0.7" />
-        </li>
-      </ul>
-      <div class="text-bold text-center text-h4 text-white q-mt-xl q-pt-xl animated fadeIn">
-        Website Development
-      </div>
+    <div style="font-family: 'Spartan'">
+      <link
+        href="https://fonts.googleapis.com/css?family=Spartan"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap"
+        rel="stylesheet"
+      />
 
-      <q-breadcrumbs class="q-pt-md text-blue-grey-11 animated fadeIn" active-color="white">
-        <q-breadcrumbs-el label="Home" to="/" />
-        <q-breadcrumbs-el label="Website Development" />
-      </q-breadcrumbs>
+      <q-parallax
+        class="gt-sm"
+        src="../assets/bg102.png"
+        style="height: 500px; margin-top: 20px"
+      >
+        <div>
+          <div class="row items-center justify-around">
+            <div class="col-12 col-md">
+              <p
+                class=""
+                style="
+                  font-family: 'Spartan';
+                  font-size: 32px;
+                  text-align: left;
+                  color: #f2f4f8;
+                  margin-bottom: 0px;
+                "
+              >
+                IT Solution - Web Development
+              </p>
+            </div>
+            <div class="col-12 col-md q-pa-xl q-ml-xl" data-aos="fade-right">
+              <div class="col-12 col-md q-pa-xl" data-aos="zoom-in-up">
+                <q-img
+                  src="~/assets/cloudOneAnimated.svg"
+                  style="
+                    max-width: 450px;
+                    margin-top: 20px;
+                    margin-bottom: 0px;
+                    margin-left: 70px;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </q-parallax>
+
+      <q-parallax class="lt-md" src="../assets/bg102.png" style="height: 800px">
+        <div>
+          <div class="row items-center justify-center">
+            <div class="col-12 col-md q-px-xl q-pt-xl q-mx-xl">
+              <p
+                class="text-h5 text-weight-bold"
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                  color: #f2f4f8;
+                "
+              >
+                IT Solution - Web Development
+              </p>
+            </div>
+          </div>
+        </div>
+      </q-parallax>
     </div>
 
     <div class="gt-sm">
-      <div class="row items-center justify-center">
+      <div
+        class="row items-center justify-center"
+        style="margin-top: 30px; margin-bottom: 30px"
+      >
         <div class="col-12 col-md q-pa-xl q-ml-xl" data-aos="fade-right">
-          <p class="text-h6 text-blue-grey-7">IT Solution</p>
-          <p class="text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Web-Developent</p>
-          <p class="text-subtitle1 text-blue-grey-9"  style="font-family:  system-ui;">
-            Looking for Website Design with creative ideas and Suggestions? You are in the right place. Where our Field
-            Experienced Researcher Come up with Unique and Creative Web templates, names and ideas. That attract Clients &
-            your potential customer remembers your name.<br />
-
-            We are the only software development company in Surat that passionately develop the complete need of a
-            customized website/web application, tested extensively to give a glitch-free user experience.
+          <p
+            class="text-h4"
+            style="font-family: 'League Spartan', sans-serif; color: #3663a8"
+          >
+            It’s time to give life to your Ideas - Web Development.
+          </p>
+          <p
+            class="text-subtitle1 text-blue-grey-9"
+            style="font-family: 'League Spartan', sans-serif"
+          >
+            We create custom, visually stunning, and functionally robust web
+            solutions that perfectly meet the needs and goals of businesses of
+            all sizes. Our team of experienced developers and designers will
+            work with you to create an exceptional user experience, using the
+            latest technologies and best practices to develop websites that are
+            secure and scalable. We also offer ongoing support and maintenance
+            to ensure that your website is always up-to-date and performing at
+            its best.
           </p>
         </div>
         <div class="col-12 col-md q-pa-xl q-mr-xl" data-aos="zoom-in-up">
-          <q-img src="~assets/website.png" style="max-width: 500px" />
+          <q-img
+            src="~assets/MobileDevelopmentIllustrator.png"
+            style="max-width: 500px"
+          />
         </div>
       </div>
     </div>
@@ -56,146 +110,450 @@
     <div class="lt-md">
       <div class="row items-center justify-center">
         <div class="col-12 col-md q-pa-lg q-mx-xl text-center">
-          <q-img src="~assets/website.png" style="max-width: 400px" />
+          <q-img
+            src="~assets/MobileDevelopmentIllustrator.png"
+            style="max-width: 400px"
+          />
         </div>
         <div class="col-12 col-md q-pa-xl q-mx-xl">
           <p class="text-h6 text-blue-grey-7">IT Solution</p>
-          <p class="text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Web-Developent</p>
-          <p class="text-subtitle1 text-blue-grey-9" style="font-family:  system-ui;">
-            Looking for Website Design with creative ideas and Suggestions? You are in the right place. Where our Field
-            Experienced Researcher Come up with Unique and Creative Web templates, names and ideas. That attract Clients &
-            your potential customer remembers your name.<br />
-            We are the only software development company in Surat that passionately develop the complete need of a
-            customized website/web application, tested extensively to give a glitch-free user experience.
+          <p
+            class="text-h4 text-primary"
+            style="font-family: 'League Spartan', sans-serif; color: #3663a8"
+          >
+            It’s time to give life to your Ideas - Web Development.
+          </p>
+          <p
+            class="text-subtitle1 text-blue-grey-9"
+            style="font-family: 'League Spartan', sans-serif"
+          >
+            We create custom, visually stunning, and functionally robust web
+            solutions that perfectly meet the needs and goals of businesses of
+            all sizes. Our team of experienced developers and designers will
+            work with you to create an exceptional user experience, using the
+            latest technologies and best practices to develop websites that are
+            secure and scalable. We also offer ongoing support and maintenance
+            to ensure that your website is always up-to-date and performing at
+            its best.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="bg-grey-2 q-pt-xl q-pb-sm">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <p class="text-center text-h4 text-primary" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Explore the Web Solution</p>
-        <p class="text-blue-grey-9 text-subtitle1 q-mx-xl" v-bind:class="{ 'q-px-xl': mobile, 'text-center': mobile }"  style="font-family:  system-ui;">
-          Your website represents your brand. And a site that’s slow, unreliable, or hard to use is a website that
-          customers and prospects will avoid. Quantum's Web Solution provides the most reliable and robust development in
-          the Web world. Quantum has a team of experts having years of experience in web development and frameworks like
-          angular, react, vue, laravel and many more.
-        </p>
+    <!-----------------------Cards Section--------------------------------->
+
+    <div class="" style="background-color: #101729">
+      <div
+        class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly"
+        style="font-family: 'League Spartan', sans-serif"
+      >
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 10px"
+        >
+        <q-img src="~assets/web-dev/num01.svg" style="max-width: 30px; max-height: 30px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          ">Mern Stack Development</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            Boost your online impact with our MERN (MongoDB, Express.js, React,
+            Node.js) development services.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 10px"
+        >
+        <q-img src="~assets/web-dev/num02.svg" style="max-width: 35px; max-height: 35px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          ">Frontend Development</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            Creative & collaboration force behind user-friendly websites
+            making your online presence engaging & memorable.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 100px; margin-bottom: 10px"
+        >
+        <q-img src="~assets/web-dev/num03.svg" style="max-width: 35px; max-height: 35px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          ">Backend Development</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            Backend development powers the magic behind websites & apps,
+            handling data, security, & functionality.
+          </p>
+        </div>
       </div>
 
-      <div class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly">
-        <q-card class="my-cardc q-my-md text-blue-grey-9 q-pa-md row justify-center items-center" data-aos="fade-left">
-          <q-card-section>
-            <q-img src="~assets/angular.png" basic style="width: 100px" />
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-cardc q-my-md text-blue-grey-9 q-pa-md row justify-center items-center" data-aos="fade-left">
-          <q-card-section>
-            <q-img src="~assets/react.png" basic style="width: 100px" />
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-cardc q-my-md text-blue-grey-9 q-pa-md row justify-center items-center" data-aos="zoom-in">
-          <q-card-section>
-            <q-img src="~assets/vue.png" basic style="width: 100px" />
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-cardc q-my-md text-blue-grey-9 q-pa-md row justify-center items-center" data-aos="fade-right">
-          <q-card-section>
-            <q-img src="~assets/laravel.png" basic style="width: 100px" />
-          </q-card-section>
-        </q-card>
-
-        <q-card class="my-cardc q-my-md text-blue-grey-9 q-pa-md row justify-center items-center" data-aos="fade-right">
-          <q-card-section>
-            <q-img src="~assets/django.png" basic style="width: 80px" />
-          </q-card-section>
-        </q-card>
+      <div
+        class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly"
+        style="font-family: 'League Spartan', sans-serif"
+      >
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 10px; margin-bottom: 100px"
+        >
+        <q-img src="~assets/web-dev/num04.svg" style="max-width: 35px; max-height: 35px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          "
+          >Full Stack Development</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            Ensuring that cost-effective, high-quality solutions are readily
+            available without sacrificing excellence.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 10px; margin-bottom: 100px"
+        >
+        <q-img src="~assets/web-dev/num05.svg" style="max-width: 35px; max-height: 35px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          ">Extended Web App</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            Web applications that are beyond ordinary with enhanced features
+            & capabilities that enhance user experiences.
+          </p>
+        </div>
+        <div
+          class="borderless"
+          data-aos="zoom-in"
+          style="margin-top: 10px; margin-bottom: 100px"
+        >
+        <q-img src="~assets/web-dev/num06.svg" style="max-width: 35px; max-height: 35px;" />
+          <p class="text-h6" style="color:#DDE1E6;
+          font-family: 'League Spartan', sans-serif;
+          font-size: 20px;
+         font-weight: 400; 
+         margin-top: 25px;
+          "
+          >Progressive Web app</p>
+          <p class="text-subtitle1" style="color:#A2A9B0;
+          font-size: 16px;
+          font-family: 'League Spartan', sans-serif;
+         font-weight: 300;
+          ">
+            The future of web & mobile experiences. It combines speed, offline
+            access & cross-device compatibility.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="q-pt-xl">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <p class="text-center text-bold text-h4 text-primary">
-          Various Solution(s), Your Choice
-        </p>
-        <p class="text-blue-grey-9 text-subtitle1 q-mx-xl" v-bind:class="{ 'q-px-xl': mobile, 'text-center': mobile }"  style="font-family:  system-ui;">
-          Our Designers with a great sense of UI and UX, Design website that meets consumer needs, empowers the
-          generation’s brand respect and leads business growth and expansion.
+    <!-----------------------Technologies--------------------------------->
+    <div>
+      <div
+        class="col-md-12 col-lg-12 bg-white col-xs-12 col-sm-12"
+        style="margin-bottom: 30px"
+      >
+        <p
+          class="text-center text-h4 q-pt-xl bg-white"
+          style="
+            font-family: 'League Spartan', sans-serif;
+            color: #3663a8;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 43.6px;
+          "
+        >
+          Frameworks we use
+          <br />
+          <span
+            class="text-center text-subtitle1 bg-white q-px-sm"
+            style="
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+              color: #21272a;
+            "
+          >
+            Empowering innovation with cutting-edge technology
+          </span>
         </p>
       </div>
 
-      <div class="q-mt-md q-mb-xl row items-stretch q-gutter-md justify-evenly"  style="font-family:  system-ui;">
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon name="fas fa-palette" size="45px" class="q-pa-sm" color="secondary" />
-          <p class="text-h6 text-primary">Web Design Service</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            Quantum offer the best website design service to its client. When we are designing websites for clients we are
-            very much client oriented. As we are a website design company, we focus on our client's requirements to fulfil
-            the optimal level of satisfaction. In this regards our motto is happy client, healthy business.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon name="fab fa-searchengin" size="45px" class="q-pa-sm" color="secondary" />
-          <p class="text-h6 text-primary">SEO Service Provider</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            We are providing SEO services both for local and international clients. By doing SEO, companies can pull the
-            customer with lesser effort. With appropriate methods and keywords, we successfully provide SEO services to
-            our valued clients. Best SEO Service Company like us, you can get better and more clients with nominal effort.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon name="fas fa-cart-arrow-down" size="45px" class="q-pa-sm" color="secondary" />
-          <p class="text-h6 text-primary">E-Commerce Website</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            We also provide eCommerce website development services. Currently, we have more than a hundred Ecommerce
-            clients who are very much satisfied with us for our unique services and support. Nowadays customers are
-            willing to buy goods and services online and we provide Ecommerce website development for companies to work
-            efficiently.
-          </p>
-        </div>
-        <div class="borderless" data-aos="zoom-in">
-          <q-icon name="fas fa-seedling" size="45px" class="q-pa-sm" color="secondary" />
-          <p class="text-h6 text-primary">Digital Growth Hacks</p>
-          <p class="text-blue-grey-9 text-subtitle1">
-            In digital advertising services, we are providing facebook and google advertisements. Nowadays companies reach
-            more clients by using digital advertising. Digital advertising open-up new opportunities for companies. With
-            the help of a digital advertising company like us, you can successfully use its promotion mix and attract more
-            clients.
-          </p>
-        </div>
+      <div
+        class="q-mx-lg q-pt-md q-pb-xl row items-stretch bg-white q-gutter-md justify-evenly gt-sm"
+        style="margin-bottom: 80px"
+      >
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-right"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo1.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-right"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo2.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-right"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo3.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-left"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo4.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-left"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo5.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+
+        <q-card
+          class="my-card q-ma-md row justify-center items-center"
+          data-aos="fade-left"
+        >
+          <q-card-section>
+            <q-img src="~assets/web-dev/logo6.svg" basic style="width: 90px" />
+          </q-card-section>
+        </q-card>
+      </div>
+
+      <div class="lt-md">
+        <q-carousel
+          animated
+          v-model="slide"
+          navigation
+          infinite
+          :autoplay="autoplay"
+          arrows
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          @mouseenter="autoplay = false"
+          @mouseleave="autoplay = true"
+          class="bg-transparent row justify-center items-center"
+          style="height: 250px"
+        >
+          <q-carousel-slide :name="1">
+            <div
+              class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card
+                class="my-card card row justify-center items-center shadow-7 q-mx-lg"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo1.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+              <q-card
+                class="my-card card row justify-center items-center shadow-7"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo2.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
+
+          <q-carousel-slide :name="2">
+            <div
+              class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card
+                class="my-card card row justify-center items-center shadow-7 q-mx-lg"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo3.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+              <q-card
+                class="my-card card row justify-center items-center shadow-7"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo4.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
+
+          <q-carousel-slide :name="3">
+            <div
+              class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card
+                class="my-card card row justify-center items-center shadow-7 q-mx-lg"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo5.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+              <q-card
+                class="my-card card row justify-center items-center shadow-7"
+              >
+                <q-card-section>
+                  <q-img
+                    src="~assets/web-dev/logo6.svg"
+                    basic
+                    style="width: 100px"
+                  />
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
       </div>
     </div>
-
-    <div class="bg-grey-2">
-      <p class="text-dark text-center q-pa-xl text-h5 q-ma-none gt-xs" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-        <span class="q-px-xl">For More information, Book Your Free Demo</span>
-        <q-btn color="primary" icon="call" class="q-ma-md" outline rounded label="Contact Us" to="/contact-us" />
-      </p>
-
-      <p class="text-dark text-center q-pa-xl text-h5 lt-sm q-ma-none" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-        For More information, Book Your Free Demo
-        <br /><br />
-        <q-btn color="primary" icon="call" outline rounded label="Contact Us" to="/contact-us" />
-      </p>
+    <!------------------------Would you love to work with you--------------------------------->
+    <div class="infox gt-xs">
+      <div
+        class="full-width flex flex-center"
+        style="background-color: #101729"
+      >
+        <p
+          class="text-center q-pa-xl"
+          style="font-family: 'League Spartan', sans-serif"
+        >
+          <span
+            class="q-px-xl"
+            style="
+              color: #dde1e6;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 57.6px;
+            "
+            >We would love to work with you on your Ideas
+          </span>
+          <q-btn
+            color=""
+            style="color: #dde1e6"
+            outline
+            label="Contact Us"
+            to="/contact-us"
+          />
+        </p>
+      </div>
+    </div>
+    <!-------------------Would you love to work with you Mobile Version ----------------------->
+    <div class="infox lt-sm">
+      <div
+        class="full-width flex flex-center"
+        style="
+          background-color: #101729;
+          font-family: 'League Spartan', sans-serif;
+        "
+      >
+        <p
+          class="text-dark text-center q-pa-xl text-h5"
+          style="color: #dde1e6; font-family: 'League Spartan', sans-serif"
+        >
+          We would love to work with you on your Ideas
+          <br />
+          <q-btn
+            color=""
+            style="color: #dde1e6"
+            outline
+            label="Contact Us"
+            to="/contact-us"
+          />
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import meta from '../utils/meta.js'
+import meta from "../utils/meta.js";
 
 export default {
   data() {
     return {
       mobile: false,
       metaTags: {
-        description: 'Looking for Website Design with creative ideas and Suggestion? You are in the right Place. Where our Field Experienced Researcher Come up with Unique and Creative Web template, names and ideas.',
-        title: 'Quantum | Web Development',
-        keywords: 'Website Dvelopment, Angular Development, web app development,react dvelopment,seo,digital marketing, wordpress development'
-      }
+        description:
+          "Looking for Website Design with creative ideas and Suggestion? You are in the right Place. Where our Field Experienced Researcher Come up with Unique and Creative Web template, names and ideas.",
+        title: "Quantum | Web Development",
+        keywords:
+          "Website Dvelopment, Angular Development, web app development,react dvelopment,seo,digital marketing, wordpress development",
+      },
     };
   },
   meta,
@@ -218,7 +576,8 @@ export default {
 
 .my-cardc:hover {
   box-shadow: 0 10px 13px -6px rgba(54, 99, 168, 0.2),
-    0 20px 31px 3px rgba(54, 99, 168, 0.14), 0 8px 38px 7px rgba(54, 99, 168, 0.12) !important;
+    0 20px 31px 3px rgba(54, 99, 168, 0.14),
+    0 8px 38px 7px rgba(54, 99, 168, 0.12) !important;
 }
 
 .borderless {

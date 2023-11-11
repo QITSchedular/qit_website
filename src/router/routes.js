@@ -1,222 +1,232 @@
-
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/Index.vue") }],
   },
   {
-    path: '/sap-vadodara',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/sap-vadodara.vue') }
-    ]
+    path: "/sap-vadodara",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/sap-vadodara.vue") }],
   },
   {
-    path: '/sap-ahmedabad',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-ahmedabad",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-ahmedabad.vue') }
-    ]
+      { path: "", component: () => import("pages/sap-ahmedabad.vue") },
+    ],
   },
   {
-    path: '/sap-mumbai',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/sap-mumbai.vue') }
-    ]
+    path: "/sap-mumbai",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/sap-mumbai.vue") }],
   },
   {
-    path: '/sap-b1-surat',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/sap-b1-surat.vue') }
-    ]
+    path: "/sap-b1-surat",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/sap-b1-surat.vue") }],
   },
   {
-    path: '/sap-b1-bangalore',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-b1-bangalore",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('src/pages/sap-b1-bangalore.vue') }
-    ]
+      { path: "", component: () => import("src/pages/sap-b1-bangalore.vue") },
+    ],
   },
   {
-    path: '/sap-business-one',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/erp-customization",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-business-one.vue') }
-    ]
+      { path: "", component: () => import("pages/erp-customization.vue") },
+    ],
   },
   {
-    path: '/sap-business-one-on-cloud',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/explore-it-solution",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-business-one-on-cloud.vue') }
-    ]
+      { path: "", component: () => import("pages/explore-it-solution.vue") },
+    ],
   },
   {
-    path: '/sap-business-one-on-hana',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-business-one-plus-hana",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-business-one-on-hana.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/sap-business-one-plus-hana.vue"),
+      },
+    ],
   },
   {
-    path: '/sap-s4-hana',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-business-one-on-cloud",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-s4-hana.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/sap-business-one-on-cloud.vue"),
+      },
+    ],
   },
   {
-    path: '/sap-s4-hana-on-cloud',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-business-one-on-hana",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-s4-hana-on-cloud.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/sap-business-one-on-hana.vue"),
+      },
+    ],
   },
   {
-    path: '/about-us',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/about-us.vue') }
-    ]
+    path: "/sap-s4-hana",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/sap-s4-hana.vue") }],
   },
   {
-    path: '/sap-business-one-addon',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-s4-hana-on-cloud",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-business-one-addon.vue') }
-    ]
+      { path: "", component: () => import("pages/sap-s4-hana-on-cloud.vue") },
+    ],
   },
   {
-    path: '/web-development',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/web-development.vue') }
-    ]
+    path: "/about-us",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/about-us.vue") }],
   },
   {
-    path: '/crm-development',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/sap-business-one-addon",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/crm-development.vue') }
-    ]
+      { path: "", component: () => import("pages/sap-business-one-addon.vue") },
+    ],
   },
   {
-    path: '/contact-us',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/web-development",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/contact-us.vue') }
-    ]
+      { path: "", component: () => import("pages/web-development.vue") },
+    ],
   },
   {
-    path: '/mobile-app-development',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/crm-development",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/mobile-app-development.vue') }
-    ]
+      { path: "", component: () => import("pages/crm-development.vue") },
+    ],
   },
   {
-    path: '/ecommerce-store-development',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/ecommerce-store-development.vue') }
-    ]
+    path: "/contact-us",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/contact-us.vue") }],
   },
   {
-    path: '/customize-erp',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/mobile-app-development",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/customize-erp.vue') }
-    ]
+      { path: "", component: () => import("pages/mobile-app-development.vue") },
+    ],
   },
   {
-    path: '/sap-traning',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/ui-ux-design",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/sap-traning.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/ui-ux-design.vue"),
+      },
+    ],
   },
   {
-    path: '/machine-learning-traning',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/customize-erp",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/machine-learning-traning.vue') }
-    ]
+      { path: "", component: () => import("pages/customize-erp.vue") },
+    ],
   },
   {
-    path: '/python-traning',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/python-traning.vue') }
-    ]
+    path: "/sap-traning",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/sap-traning.vue") }],
   },
   {
-    path: '/placement-service',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/machine-learning-traning",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/placement-service.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/machine-learning-traning.vue"),
+      },
+    ],
   },
   {
-    path: '/einvoice-ewaybill-solution',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/python-traning",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/einvoice-ewaybill-solution.vue') }
-    ]
+      { path: "", component: () => import("pages/python-traning.vue") },
+    ],
   },
   {
-    path: '/digital-signature',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/placement-service",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/digital-signature.vue') }
-    ]
+      { path: "", component: () => import("pages/placement-service.vue") },
+    ],
   },
   {
-    path: '/quality-control-system',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/einvoice-ewaybill-solution",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/quality-control-system.vue') }
-    ]
+      {
+        path: "",
+        component: () => import("pages/einvoice-ewaybill-solution.vue"),
+      },
+    ],
   },
   {
-    path: '/career-at-quantum',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/digital-signature",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/career-at-quantum.vue') }
-    ]
+      { path: "", component: () => import("pages/digital-signature.vue") },
+    ],
   },
   {
-    path: '/dashboard',
-    component: () => import('layouts/sublayout.vue'),
+    path: "/quality-control-system",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/quality-control-system.vue") },
+    ],
+  },
+  {
+    path: "/career-at-quantum",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/career-at-quantum.vue") },
+    ],
+  },
+  {
+    path: "/dashboard",
+    component: () => import("layouts/sublayout.vue"),
     meta: { requiresAuth: true },
-    children: [
-      { path: '', component: () => import('pages/dashboard.vue') }
-    ]
+    children: [{ path: "", component: () => import("pages/dashboard.vue") }],
   },
   {
-    path: '/jobpost',
-    component: () => import('layouts/sublayout.vue'),
+    path: "/jobpost",
+    component: () => import("layouts/sublayout.vue"),
     meta: { requiresAuth: true },
-    children: [
-      { path: '', component: () => import('pages/jobpost.vue') }
-    ]
+    children: [{ path: "", component: () => import("pages/jobpost.vue") }],
   },
-
 
   // Always leave this as last one,
   // but you can also remove it
   {
-    path: '/auth',
-    component: () => import('pages/auth.vue')
+    path: "/auth",
+    component: () => import("pages/auth.vue"),
   },
   {
-    path: '*',
-    component: () => import('pages/Error404.vue')
-  }
-]
+    path: "*",
+    component: () => import("pages/Error404.vue"),
+  },
+];
 
-export default routes
+export default routes;

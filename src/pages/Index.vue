@@ -1,7 +1,7 @@
 <template>
   <div>
     <!------------------------Hero Section---------------------------------->
-    <q-parallax src="../assets/bg101.png" style= "min-height:665px;"  class="active" :height="windowHeight">
+    <q-parallax src="~/assets/bg101.png" style= "min-height:665px;"  class="active" :height="windowHeight">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,7 @@
     </q-parallax>
     <!------------------------Hero Section end---------------------------------->
     
-    <!------------------------about Section end---------------------------------->
+    <!------------------------about Section Desktop---------------------------------->
     <div class="gt-sm gen">
       <div class="row items-center justify-center" 
       style="background-color: #FFF; padding-left: 50px;">
@@ -161,7 +161,7 @@
     <!------------------------Cards Header Section---------------------------------->
     <div class="" style="background-color: #101729" >
       <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-        <p class="text-center text-bold  text-h4 q-pt-xl text-white" style="font-family:'League Spartan', sans-serif; font-size: 32px;
+        <p class="text-center text-bold text-h4 q-pt-xl text-white" style="font-family:'League Spartan', sans-serif; font-size: 32px;
                     font-style: normal;
                     font-weight: 400;     
                     ">
@@ -311,10 +311,12 @@
       </div>
 
     </div>
+    
+
      <!------------------------Carousal Module---------------------------------->
 
-    <div class="">
-      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+     <div class="">
+      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="margin-bottom: -70px">
         <p class="text-left text-bold text-h5 q-pt-xl"  style="font-family:'League Spartan', sans-serif; color: #3663A8; padding-left: 300px; ">
           PRODUCTS
           <br />
@@ -332,21 +334,32 @@
       </div>
 
       <div id="custom-section-2">
-
-     
-
       <main>
         <q-container
           fluid
           class="bg-trasparent q-mt-md q-pa-md"
           style="position: relative"
         >
-       
           <div
             class="row q-ma-sm q-pa-md justify-center items-center"
-            style="background: transparent"
+            style="background: transparent; "
           >
-          
+          <q-carousel
+              animated
+              v-model="slide"
+              navigation
+              infinite
+              :autoplay="autoplay"
+              arrows
+              transition-prev="slide-right"
+              transition-next="slide-left"
+              @mouseenter="autoplay = false"
+              @mouseleave="autoplay = true"
+              class="bg-transparent row justify-center items-center" 
+              style="height:700px; width: 500px;"
+             >
+            <!-- Card 1 -->
+            <q-carousel-slide :name="1">
             <div
               class="justify-center col-xs-12 col-md-3 col-lg-3 q-pa-md product-card-wrapper"
               style="background: transparent; "
@@ -356,15 +369,11 @@
                   class="t-card q-h-full q-shadow-sm q-pa-md"
                   style="background-color: whitesmoke"
                 >
-               
                   <img
-                    src="../assets/cards1.svg"
+                    src="~/assets/cards1.svg"
                     class="card-img-top"
                     alt="..."
                   />
-               
-
-
                   <div class="card-body q-clearfix">
                     <p class="card-title text-center" 
                     style="color: #343A3F; 
@@ -381,6 +390,7 @@
                          font-size: 14px;
                          font-style: normal;
                          font-weight: 400;
+                         text-align: center;
                          line-height: 26px;
                          font-family: 'League Spartan', sans-serif;
                          ">
@@ -391,10 +401,12 @@
                 </div>
               </div>
             </div>
-           
+            </q-carousel-slide>
+             <!-- Card 2 -->
+             <q-carousel-slide :name="2">
             <div
               class="justify-center col-xs-12 col-md-3 col-lg-3 q-pa-md product-card-wrapper"
-              style="background: transparent"
+              style="background: transparent; "
             >
               <div class="t-card-wrapper">
                 <div
@@ -402,7 +414,7 @@
                   style="background-color: whitesmoke"
                 >
                   <img
-                    src="../assets/Cards2.svg"
+                    src="~/assets/Cards2.svg"
                     class="card-img-top"
                     alt="..."
                   />
@@ -423,6 +435,7 @@
                          font-style: normal;
                          font-weight: 400;
                          line-height: 26px;
+                         text-align: center;
                          font-family: 'League Spartan', sans-serif;
                          ">
                       Get digital signature solutions working within weeks, not months. Deliver completely customised workflow as per end user needs, with a quick turnaround time that makes it easy to handle changes to requests.
@@ -432,10 +445,12 @@
                 </div>
               </div>
             </div>
-       
+          </q-carousel-slide>
+              <!-- Card 3 -->
+          <q-carousel-slide :name="3">
             <div
               class="justify-center col-xs-12 col-md-3 col-lg-3 q-pa-md product-card-wrapper"
-              style="background: transparent"
+              style="background: transparent; "
             >
               <div class="t-card-wrapper">
                 <div
@@ -443,7 +458,7 @@
                   style="background-color: whitesmoke"
                 >
                   <img
-                    src="../assets/Cards3.svg"
+                    src="~/assets/Cards3.svg"
                     class="card-img-top"
                     alt="..."
                   />
@@ -463,6 +478,7 @@
                          font-size: 14px;
                          font-style: normal;
                          font-weight: 400;
+                         text-align: center;
                          line-height: 26px;
                          font-family: 'League Spartan', sans-serif;
                          ">
@@ -473,8 +489,100 @@
                 </div>
               </div>
             </div>
+          </q-carousel-slide>
+           <!-- Card 4 -->
+           <q-carousel-slide :name="4">
+            <div
+              class="justify-center col-xs-12 col-md-3 col-lg-3 q-pa-md product-card-wrapper"
+              style="background: transparent; "
+            >
+              <div class="t-card-wrapper">
+                <div
+                  class="t-card q-h-full q-shadow-sm q-pa-md"
+                  style="background-color: whitesmoke"
+                >
+                  <img
+                    src="~/assets/Cards4.svg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body q-clearfix">
+                    <p class="card-title text-center"
+                    style="color: #343A3F; 
+                        font-size: 24px;
+                         font-style: normal;
+                         font-weight: 500;
+                         line-height: 36px;
+                         font-family: 'League Spartan', sans-serif; 
+                         ">
+                    Tracking Management Software
+                    </p>
+                    <div class="card-info" 
+                    style="height: 150px; color: #343A3F; 
+                         font-size: 14px;
+                         font-style: normal;
+                         font-weight: 400;
+                         line-height: 26px;
+                         text-align: center;
+                         font-family: 'League Spartan', sans-serif;
+                         ">
+                      By tracking employee activity, employers can identify areas where they can improve efficiency and reduce costs. ETMS can also be used to monitor employee compliance with company policies and procedures.
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </q-carousel-slide>
+           <!-- Card 5 -->
+           <q-carousel-slide :name="5">
+            <div
+              class="justify-center col-xs-12 col-md-3 col-lg-3 q-pa-md product-card-wrapper"
+              style="background: transparent; "
+            >
+              <div class="t-card-wrapper">
+                <div
+                  class="t-card q-h-full q-shadow-sm q-pa-md"
+                  style="background-color: whitesmoke"
+                >
+                  <img
+                    src="~/assets/Cards5.svg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body q-clearfix">
+                    <p class="card-title text-center"
+                    style="color: #343A3F; 
+                        font-size: 24px;
+                         font-style: normal;
+                         font-weight: 500;
+                         line-height: 36px;
+                         font-family: 'League Spartan', sans-serif; 
+                         ">
+                      Whatsapp Web Solution
+                    </p>
+                    <div class="card-info" 
+                    style="height: 150px; color: #343A3F; 
+                         font-size: 14px;
+                         font-style: normal;
+                         font-weight: 400;
+                         line-height: 26px;
+                         text-align: center;
+                         font-family: 'League Spartan', sans-serif;
+                         ">
+                      Whether you're looking for website development, design, or support, our solution is designed to streamline your experience, making it more convenient and efficient than ever before.
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </q-carousel-slide>
+
+          </q-carousel>
          
           </div>
+
         </q-container>
       </main>
     </div>
@@ -643,7 +751,7 @@ line-height: 24px;
     </q-card-section>
   </q-card>
 
-  <q-card class="my-card q-ma-md card row justify-center items-center shadow-7" data-aos="fade-left"
+  <q-card class="my-card q-ma-md card row justify-center items-center shadow-7" data-aos="fade-right"
   style="background-color:#101729;"
   >
     <q-card-section>
@@ -717,87 +825,7 @@ line-height: 24px;
 
 </div>
         </div>
-         <!------------------------Example Partners design Part -1---------------------------------->
-         <div class="brand">
-
-   <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" style="background-color:#101729;">
-   <p class="text-center text-h4 q-pt-xl text-white" style="font-family:'League Spartan', sans-serif; background-color:#101729; color: #F2F4F8; 
-  font-size: 32px;
-font-weight: 400;
-line-height: 47.6px;">
-    Over the years we have worked with
-    <br />
-    <span class="text-center text-subtitle1 text-white q-px-sm text-dark" style="background-color:#101729;
-    color: #DDE1E6; 
-    font-size: 16px;
-font-weight: 300;
-line-height: 24px;
-    ">
-      We have been there for our clients every step of the way
-    </span>
-   </p>
-
-    <div class="q-pa-md" style="background-color:#101729;" >
-    <q-carousel
-      animated
-      v-model="slide"
-      navigation
-      infinite
-      :autoplay="autoplay"
-      arrows
-      transition-prev="slide-right"
-      transition-next="slide-left"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
-    >
-      <q-carousel-slide :name="1" img-src="~assets/clients1.svg" />
-      <q-carousel-slide :name="2" img-src="~assets/clients2.svg" />
-      <q-carousel-slide :name="3" img-src="~assets/clients3.svg" />
-      <q-carousel-slide :name="4" img-src="~assets/clients4.svg" />
-    </q-carousel>
-  </div>
-
-
-
-<div class="lt-md">
-  <q-carousel animated v-model="slide" navigation infinite :autoplay="autoplay" arrows transition-prev="slide-right"
-    transition-next="slide-left" @mouseenter="autoplay = false" @mouseleave="autoplay = true"
-    class="bg-transparent row justify-center items-center" style="height:250px">
-    <q-carousel-slide :name="1">
-      <div class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap ">
-        <q-card class="my-card  card row justify-center items-center shadow-7 q-mx-lg">
-          <q-card-section>
-            <q-img src="~assets/sap1.png" basic style="width:100px" />
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card  card row justify-center items-center shadow-7">
-          <q-card-section>
-            <q-img src="~assets/suse.png" basic style="width:100px" />
-          </q-card-section>
-        </q-card>
-      </div>
-    </q-carousel-slide>
-
-    <q-carousel-slide :name="2">
-      <div class="row fit justify-start item-center q-gutter-xs q-col-gutter no-wrap ">
-        <q-card class="my-card  card row justify-center items-center shadow-7 q-mx-lg">
-          <q-card-section>
-            <q-img src="~assets/power.png" basic style="width:100px" />
-          </q-card-section>
-        </q-card>
-        <q-card class="my-card card row justify-center items-center shadow-7">
-          <q-card-section>
-            <q-img src="~assets/micro.png" basic style="width:100px" />
-          </q-card-section>
-        </q-card>
-      </div>
-    </q-carousel-slide>
-
-  </q-carousel>
-</div>
-
-</div>
-        </div>
+         
 
      <!------------------------Partners design Part -2---------------------------------->
      <div class="brand">
@@ -1006,11 +1034,11 @@ export default {
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 .b2{
-  background: url('~assets/bg102.png')
-  background-size: cover
-  background-position: center
-  background-attachment: fixed
-  background-repeat: no-repeat
+  background: url('~assets/bg102.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .b3{
   background: url('~assets/bg102.png')
